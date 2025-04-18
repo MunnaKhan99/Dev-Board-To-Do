@@ -32,7 +32,8 @@
                 <img src="./assets/checkbox.png" alt="">
                 <p id="total-completed-task" class="text-xl font-bold ml-2">23</p>
             </div>
-            <img src="./assets/theme-btn.png" alt="">
+            <img id="theme-toggle" src="./assets/theme-btn.png" alt="Toggle Theme" class="cursor-pointer">
+
         </div>
     </header>
     <div class="flex gap-6">
@@ -52,7 +53,7 @@
                 </div>
               </div>
 
-              <div class="col-span-2 bg-gradient-to-r from-indigo-400 to-blue-400 rounded-lg flex items-center justify-center px-6 py-4">
+              <div id="blogs" class="col-span-2 bg-gradient-to-r from-indigo-400 to-blue-400 rounded-lg flex items-center justify-center px-6 py-4 cursor-pointer">
                 <div class="flex  justify-center gap-3 items-center">
                  <img src="./assets/board.png" alt="">
                   <p class="text-white text-xl">Discover Something <br> New Today!</p>
@@ -224,7 +225,7 @@
               <img src="./assets/activity.png" alt="">
               <p class="text-lg font-medium">Activity Log</p>
             </div>
-            <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">
+            <button id="btn-activity" class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg cursor-pointer">
               Clear History
             </button>
           </div>
@@ -239,5 +240,45 @@
       <script src="./script/completed.js"></script>
       <script src="./utilities/utilities.js"></script>
       <script src="./script/datetime.js"></script>
+      <script src="./script/activity.js"></script>
+      <script>
+        document.getElementById("blogs")
+        .addEventListener("click",function(event){
+        event.preventDefault();
+        window.location.href = "./blogs.html"
+})
+      </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      const colors = [
+          "bg-red-200",
+          "bg-blue-200",
+          "bg-green-200",
+          "bg-yellow-200",
+          "bg-purple-200",
+          "bg-pink-200",
+          "bg-indigo-200",
+          "bg-gray-200"
+      ];
+
+      let current = 0;
+
+      themeToggleBtn.addEventListener("click", () => {
+          // Remove current background color
+          body.classList.remove(colors[current]);
+
+          // Move to next color
+          current = (current + 1) % colors.length;
+
+          // Add new background color
+          body.classList.add(colors[current]);
+      });
+  });
+</script>
+
 </body>
 </html>

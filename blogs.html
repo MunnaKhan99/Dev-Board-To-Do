@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+  </style>
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body class="bg-gray-200 min-h-screen pt-6 px-24">
+    <header class="bg-white rounded-2xl shadow p-4 flex justify-between items-center mb-6">
+        <div class="flex items-center">
+            <img src="./assets/logo.png" alt="">
+            <h3 class="pl-2 text-3xl">Dev<span class="font-bold">Board</span></h3>
+        </div>
+        <button id="goto-main" class=" btn bg-indigo-600 text-white">Back to Desk</button>
+    </header>
+    <section>
+        <h1 class="text-center font-bold  text-3xl">Blog</h1>
+        <div class="bg-white rounded-2xl shadow p-4 my-3">
+            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-3">
+            <p>ChatGPT said:
+                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+        </div>
+
+        <!-- question-2 -->
+        <div class="bg-white rounded-2xl shadow my-3 p-4">
+            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-1">
+            <p>ChatGPT said:
+                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+        </div>
+
+        <!-- question-3 -->
+
+        <div class="bg-white rounded-2xl shadow my-3 p-4">
+            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-1">
+            <p>ChatGPT said:
+                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+        </div>
+
+        <!-- question-4 -->
+        <div class="bg-white rounded-2xl shadow my-3 p-4">
+            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-1">
+            <p>ChatGPT said:
+                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+        </div>
+
+        <!-- question-5 -->
+        <div class="bg-white rounded-2xl shadow my-3 p-4">
+            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-1">
+            <p>ChatGPT said:
+                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+        </div>
+    </section>
+
+  <script>
+    document.getElementById("goto-main").addEventListener("click", function () {
+      window.location.href = "./index.html";
+    });
+  </script>
+</body>
+</html>
