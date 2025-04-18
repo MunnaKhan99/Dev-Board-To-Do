@@ -4,7 +4,8 @@ for(let i = 0; i < buttons.length;i++){
         event.preventDefault();
 
         this.disabled = true;
-        this.classList.add("opacity-50","cursor-not-allowed");
+        this.classList.remove("cursor-pointer");
+        this.classList.add("opacity-50", "cursor-default");
 
         const task = getInnerTextById("task-assign");
         const totalCompletedTask = getInnerTextById("total-completed-task");
@@ -20,6 +21,7 @@ for(let i = 0; i < buttons.length;i++){
         const time = new Date().toLocaleTimeString([], {
             hour: '2-digit',
             minute: '2-digit',
+            second:'2-digit',
             hour12: true
           });
 

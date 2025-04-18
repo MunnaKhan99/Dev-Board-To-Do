@@ -1,4 +1,3 @@
-// Step 1: Assigned date (once)
 const assignedDate = new Date();
 
 const weekday = assignedDate.toLocaleDateString('en-US', { weekday: 'short' });
@@ -18,7 +17,6 @@ const deadlineDay = deadlineDate.getDate();
 const deadlineYear = deadlineDate.getFullYear();
 const deadlineFormatted = `${deadlineDay} ${deadlineMonth}  ${deadlineYear}`;
 
-// Step 3: Apply to all elements with class 'deadline-date'
 const deadlines = document.querySelectorAll('.deadline-date');
 deadlines.forEach(el => {
   el.innerText = deadlineFormatted;
