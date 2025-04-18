@@ -30,47 +30,54 @@
         <button id="goto-main" class=" btn bg-indigo-600 text-white">Back to Desk</button>
     </header>
     <section>
-        <h1 class="text-center font-bold  text-3xl">Blog</h1>
+        <h1 class="text-center font-bold text-3xl">Blog</h1>
+    
+        <!-- Question 1 -->
         <div class="bg-white rounded-2xl shadow p-4 my-3">
-            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
+            <p>Question-1: What are the different ways to select an element in the DOM?</p>
             <hr class="border-t-1 border-dashed border-gray-300 my-3">
-            <p>ChatGPT said:
-                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+            <p>
+                There are several ways to select elements in the DOM using JavaScript. The most common method is <code>getElementById()</code>, which selects a single element by its ID. You can also use <code>getElementsByClassName()</code> or <code>getElementsByTagName()</code> to retrieve elements by class or tag name. For more flexibility, <code>querySelector()</code> allows selecting the first element that matches any CSS selector, while <code>querySelectorAll()</code> returns all matching elements as a NodeList. These methods are often combined with DOM traversal techniques to target specific elements.
+            </p>
         </div>
-
-        <!-- question-2 -->
+    
+        <!-- Question 2 -->
         <div class="bg-white rounded-2xl shadow my-3 p-4">
-            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
-            <hr class="border-t-1 border-dashed border-gray-300 my-1">
-            <p>ChatGPT said:
-                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+            <p>Question-2: What is the difference between innerHTML, innerText, and textContent?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-3">
+            <p>
+                The key difference between <code>innerHTML</code>, <code>innerText</code>, and <code>textContent</code> lies in how they handle content and formatting. <code>innerHTML</code> returns the HTML structure as a string, including tags. <code>innerText</code> only returns visible text, ignoring hidden elements and respecting CSS styles. <code>textContent</code> returns all the text within an element, regardless of styling or visibility. While <code>innerHTML</code> is useful for injecting HTML, <code>innerText</code> and <code>textContent</code> are better suited for retrieving plain text.
+            </p>
         </div>
-
-        <!-- question-3 -->
-
+    
+        <!-- Question 3 -->
         <div class="bg-white rounded-2xl shadow my-3 p-4">
-            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
-            <hr class="border-t-1 border-dashed border-gray-300 my-1">
-            <p>ChatGPT said:
-                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+            <p>Question-3: What is event delegation in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-3">
+            <p>
+                Event delegation is a technique in JavaScript where a parent element handles events for its child elements. Instead of attaching individual event listeners to each child, you add one listener to the parent and use conditional logic to detect which child triggered the event. This approach improves performance and makes your code more efficient, especially when working with dynamically added elements.
+            </p>
         </div>
-
-        <!-- question-4 -->
+    
+        <!-- Question 4 -->
         <div class="bg-white rounded-2xl shadow my-3 p-4">
-            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
-            <hr class="border-t-1 border-dashed border-gray-300 my-1">
-            <p>ChatGPT said:
-                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+            <p>Question-4: What is event bubbling in the DOM?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-3">
+            <p>
+                Event bubbling is a behavior in the DOM where an event triggered on a child element propagates upward through its parent elements. For example, if a click occurs on a button inside a div, the event will "bubble up" to the div and any other ancestors. This allows parent elements to listen for events that happen on their children without needing separate event listeners for each one.
+            </p>
         </div>
-
-        <!-- question-5 -->
+    
+        <!-- Question 5 -->
         <div class="bg-white rounded-2xl shadow my-3 p-4">
-            <p>Queston-1: What are the different ways to select an element in the DOM?</p>
-            <hr class="border-t-1 border-dashed border-gray-300 my-1">
-            <p>ChatGPT said:
-                In JavaScript, DOM elements can be selected using various methods depending on the need. document.getElementById("id") selects a single element by its unique ID, while document.getElementsByClassName("class") and document.getElementsByTagName("tag") return collections of elements matching a class or tag name respectively. For form elements, document.getElementsByName("name") retrieves elements by their name attribute. The most flexible and modern approach is using document.querySelector("selector") to select the first element that matches a CSS selector, and document.querySelectorAll("selector") to select all matching elements, returning a NodeList. Additionally, elements can be selected by traversing from a parent element using methods like parent.querySelector(".child").</p>
+            <p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class="border-t-1 border-dashed border-gray-300 my-3">
+            <p>
+                To create a new element in JavaScript, you use <code>document.createElement("tagName")</code>. After creating it, you can set its properties or inner content, and then use <code>appendChild()</code> or <code>append()</code> to add it to the DOM. To remove an element, you can call <code>remove()</code> on the element itself or use <code>parent.removeChild(child)</code>. These methods give you full control to dynamically update the page structure with JavaScript.
+            </p>
         </div>
     </section>
+    
 
   <script>
     document.getElementById("goto-main").addEventListener("click", function () {
